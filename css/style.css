@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "poppins",  sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.section-1{
+height: 100vh;
+width: 100vw;
+background-size: cover;
+
+
+    background-image: linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)), url("../assets/Netflix-Background.jpg");
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+   padding: 25px;;
+   width: 80%;
+  
+   
+}
+.logonetflix{
+    height:50px;
+    width:130px;
+}
+.menu-main{
+    display: flex;
+    
+    padding: 15px;;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.menu-main-a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+   
+}
+li{
+   list-style: none;
+}
+.sign-in{
+    background-color: red;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+    border-radius: 5px;
+}
+#lang-select{
+    background-color: transparent;
+    border: 1px solid rgb(128, 125, 125);
+    color: white;
+    padding: 5px;
+    width:100px;
+    border-radius: 5px;
+}
+.lang-option{
+    color:red;
+    font-weight: bold;
+    background-color: black;
+    border:white;
+}
+.content-main{
+  
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    justify-content: center;
+    align-items: center;
+}
+.content-main-1{
+    
+    text-align: center;
+}
+.content-main-2{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+   
+}
+.content-main-2-in{
+    display: flex;
+    gap:10px;
+     
+    
+}
+.btn-main{
+    background-color: red;
+    border: none;
+    border-radius:5px;
+    height:50px;
+    width:230px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.h1-main{
+    color:white;
+    width: 560px;
+    font-weight:bold;
+   font-size: clamp(2rem, 5vw, 3.5rem);
+    
+
+}
+.p-main-1{
+    color:whitesmoke;
+    font-size: clamp(1rem,5vw,1.5rem);
+    font-weight: bold;
+}
+.p-main-2{
+    color: white;
+    font-size: clamp(0.9rem,3vw,1rem);
+  
+}
+
+.email-main{
+    background-color: transparent;
+    color:white;
+    border: 1px solid rgb(128, 125, 125);
+    height:50px;
+    width:350px;
+    border-radius:5px;
+}
+.email-main::placeholder{
+    color:white;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+
+@media (max-width:600px){
+    .content-main-2-in{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap:15px;
+    }
+    .email-main,.btn-main{
+        width:300px;
+    }
+    .content-main-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1-main{
+        max-width:300px;
+    }
+   .p-main-2{
+    text-align: center;
+   }
+   #lang-select{
+    display: none;
+    
+   }
+   header{
+   
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .logonetflix{
+    width:120px;
+    height:50px;
+
+   }
+}
+
+
+
+/* section-2 css */
+
+.section-2{
+    background-color: black;
+display: flex;
+flex-direction: column;
+gap:25px;
+
+align-items: center;
+  
+  padding:20px;
+}
+.sec-2head{
+    display: flex;
+    justify-content: left;
+
+  margin-top: 50px;
+    width:90%;
+}
+.sec-2-heading{
+    color:white;
+    
+}
+.movies-cards{
+   
+    display: flex;
+    gap:15px;
+    width:90%;
+    scrollbar-width: none;     
+  -ms-overflow-style: none; 
+    justify-content: space-evenly;
+    overflow-x: auto;   /* horizontal scroll */
+  white-space: nowrap;
+}
+.trending-img{
+    border-radius:15px;
+    width:200px;
+ 
+  
+}
+.card{
+transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
