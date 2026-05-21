@@ -275,6 +275,7 @@ transition: transform 0.3s ease;
     color:white;
 }
 .cards-p{
-    max-width: clamp(200px,);
+   width:220px;
     color:whitesmoke;
+    font-weight: 500;
 }
