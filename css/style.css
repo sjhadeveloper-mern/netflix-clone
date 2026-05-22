@@ -206,7 +206,7 @@ align-items: center;
   margin-top: 50px;
     width:90%;
 }
-.sec-2-heading,.sec-3-heading{
+.sec-2-heading,.sec-3-heading,.sec-4-heading{
     color:white;
     
 }
@@ -252,14 +252,14 @@ transition: transform 0.3s ease;
   -ms-overflow-style: none; 
    
 }
-.sec-3-in{
+.sec-3-in,.sec-4-in{
     width: 90%;
+  
   
 }
 .cards{
     display: flex;
-      overflow-wrap: break-word;
-  line-height: 1.6;
+     
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -273,9 +273,48 @@ transition: transform 0.3s ease;
 }
 .cards-h{
     color:white;
+    width:220px;
 }
 .cards-p{
    width:220px;
     color:whitesmoke;
     font-weight: 500;
+}
+
+
+
+/* section-4 css */
+
+.section-4{
+    background-color:black;
+display: flex;
+justify-content:center ;
+}
+.asked-ques{
+    
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,80px);
+    
+   row-gap: 15px;
+}
+.asked-ques-ans{
+ background-color:rgb(43, 42, 42);
+ display: flex;
+ align-items: center;
+ padding-left: 25px;
+ font-size: clamp(1rem,5vw,1.5rem);
+ color:white;
+  
+}
+.asked-ques-ans:hover{
+    background-color: gray;
+    opacity: 0.5;
+   
+}
+.sec-4-bottom{
+  
+    display: flex;
+    justify-content: center;
 }
