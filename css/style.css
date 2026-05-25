@@ -146,44 +146,6 @@ li{
 
 
 
-@media (max-width:600px){
-    .content-main-2-in{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap:15px;
-    }
-    .email-main,.btn-main{
-        width:300px;
-    }
-    .content-main-1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .h1-main{
-        max-width:300px;
-    }
-   .p-main-2{
-    text-align: center;
-   }
-   #lang-select{
-    display: none;
-    
-   }
-   header{
-   
-    width:90%;
-    display: flex;
-    justify-content: space-between;
-   }
-   .logonetflix{
-    width:120px;
-    height:50px;
-
-   }
-}
 
 
 
@@ -192,29 +154,32 @@ li{
 .section-2{
     background-color: black;
 display: flex;
+
 flex-direction: column;
 gap:25px;
 
 align-items: center;
   
-  padding:20px;
+ 
 }
 .sec-2head{
     display: flex;
     justify-content: left;
 
   margin-top: 50px;
-    width:90%;
+    
 }
 .sec-2-heading,.sec-3-heading,.sec-4-heading{
     color:white;
+    font-size:clamp(1rem,5vw,1.5rem);
     
 }
 .movies-cards{
-   
+  
     display: flex;
     gap:15px;
-    width:90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     scrollbar-width: none;     
   -ms-overflow-style: none; 
     justify-content: space-evenly;
@@ -242,18 +207,22 @@ transition: transform 0.3s ease;
 }
 
 .features-cards{
+   
     display: grid;
     grid-template-rows: 270px;
     grid-template-columns: repeat(4,minmax(250px,1fr));
-    padding: 25px;
-    gap:35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ 
+    gap:15px;
     overflow-x: scroll;
     scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; 
    
 }
-.sec-3-in,.sec-4-in{
+.sec-2-in,.sec-3-in,.sec-4-in{
     width: 90%;
+   
   
   
 }
@@ -290,9 +259,14 @@ transition: transform 0.3s ease;
 display: flex;
 justify-content:center ;
 }
+.sec-4-in{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
 .asked-ques{
   width:90vw;
-    padding: 25px;
+   
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,80px);
@@ -316,8 +290,59 @@ justify-content:center ;
 
    
 }
+.asked-ques-div{
+   
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+}
 .sec-4-bottom{
    
     display: flex;
     justify-content: center;
+}
+
+/* media query  */
+
+@media (max-width:600px){
+ 
+    .content-main-2-in{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap:15px;
+    }
+    .email-main,.btn-main{
+        width:300px;
+    }
+    .content-main-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1-main{
+        max-width:300px;
+    }
+   .p-main-2{
+    text-align: center;
+   }
+   #lang-select{
+    display: none;
+    
+   }
+   header{
+   
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .logonetflix{
+    width:120px;
+    height:50px;
+
+   }
+   .sec-3-in,.sec-2-in,.sec-4-in{
+    width: 90%;
+   }
 }
