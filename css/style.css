@@ -291,7 +291,7 @@ display: flex;
 justify-content:center ;
 }
 .asked-ques{
-    
+  width:90vw;
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr;
@@ -309,12 +309,15 @@ justify-content:center ;
   
 }
 .asked-ques-ans:hover{
-    background-color: gray;
-    opacity: 0.5;
+  color:white;
+  background-color: rgb(68, 66, 66);
+   
+  
+
    
 }
 .sec-4-bottom{
-  
+   
     display: flex;
     justify-content: center;
 }
