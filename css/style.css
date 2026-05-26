@@ -409,4 +409,16 @@ align-items: flex-start;
    .sec-3-in,.sec-2-in,.sec-4-in{
     width: 90%;
    }
+   .footer-divs{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap:25px;
+   }
+   .footer-div{
+    background-color: rgba(38, 37, 37, 0.367);
+    padding: 25px;;
+    border-radius: 15px;
+   }
 }
